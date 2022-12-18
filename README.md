@@ -5,7 +5,7 @@
 
     * Main menu strip at the top middle of the screen.
 
-    * Main bottom strip at the bottom middle screen.
+    * Main bottom strip at the bottom middle of the screen.
 
     * Mouse interactive animations
 
