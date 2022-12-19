@@ -49,14 +49,19 @@
 .btm-strip {
     background-color: rgba(50, 50, 50, 0.5);
     border-radius: 5px;
-    bottom: 0;
     display: inline;
     opacity: 100%;
     padding: 10px;
-    position: fixed;
     text-align: center;
-    padding: 4px 8px;
+    padding: 4px 4px;
     transition-duration: 200ms
+}
+
+.btm-position {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
 }
 
 /*Main bottom strip behaviors of the UI*/
