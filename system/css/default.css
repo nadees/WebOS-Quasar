@@ -61,7 +61,7 @@
 
 /*Main bottom strip behaviors of the UI*/
 .btm-strip:hover {
-    background-color: rgb(50, 50, 50)white;
+    background-color: rgb(50, 50, 50);
     border-radius: 5px;
     box-shadow:  0 12px 16px 0 rgb(0, 0, 0), 0 17px 50px 0 rgba(50, 50, 50);
     opacity: 100%;
@@ -72,10 +72,10 @@
 
 /*Main bottom strip button of the UI*/
 .btm-btn {
-    background-color: rgb(200, 200, 200);
+    font-size: 15px;
+    background-color: rgba(50, 50, 50, 0);
     border: none;
     border-radius: 5px;
-    box-shadow:  0 12px 16px 0 rgba(0, 0, 0, 0.200), 0 17px 50px 0 rgba(0, 0, 0, 0.200);
     color: rgb(0, 0, 0);
     float: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -87,9 +87,9 @@
 .btm-btn:hover {
     background-color: rgb(0, 0, 0);
     border-radius: 5px;
-    box-shadow:  0 12px 16px 0 rgb(0, 0, 0), 0 17px 50px 0 rgb(0, 0, 0);
+    box-shadow:  0 12px 16px 0 rgb(0, 0, 0), 0 17px 50px 0 rgb(128, 128, 128);
     color: rgb(255, 255, 255);
-    padding: 4px 8px;
+    padding: 8px 8px;
     transition-duration: 300ms;
 }
 
