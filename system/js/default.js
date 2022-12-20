@@ -1,5 +1,7 @@
+//To prevent right click event in browser
 document.addEventListener('contextmenu', event => event.preventDefault());
 
+//To max-screen
 var elem = document.documentElement;
 function openFullscreen() {
   if (elem.requestFullscreen) {
@@ -11,6 +13,7 @@ function openFullscreen() {
   }
 }
 
+//To min-screen
 function closeFullscreen() {
   if (document.exitFullscreen) {
     document.exitFullscreen();
