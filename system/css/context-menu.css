@@ -2,8 +2,10 @@
     position: absolute;
     display: none;
     z-index: 1;
-    background-color: white;
-    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: left;
   }
 
   .context-menu.active {
@@ -17,10 +19,19 @@
   }
 
   .context-menu li {
-    padding: 8px 12px;
+    border-radius: 10px;
     cursor: pointer;
   }
 
   .context-menu li:hover {
-    background-color: lightgray;
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+
+  .context-menu button {
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 8px 8px;
+    width: 200px;
   }
