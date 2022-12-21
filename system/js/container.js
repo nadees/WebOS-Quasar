@@ -1,42 +1,50 @@
-dragElement(document.getElementById("window"));
-
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
-    /* if present, the header is where you move the DIV from:*/
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-  } else {
-    /* otherwise, move the DIV from anywhere inside the DIV:*/
-    elmnt.onmousedown = dragMouseDown;
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
-
-  function closeDragElement() {
-    /* stop moving when mouse button is released:*/
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
+    // Get the window element
+    var windowEl = document.querySelector('.window');
+    
+    // Get the header element
+    var headerEl = windowEl.querySelector('.window-header');
+    
+    // Flag to track whether the window is being moved
+    var isMoving = false;
+    
+    // Initial mouse position
+    var initialMouseX = 0;
+    var initialMouseY = 0;
+    
+    // Initial window position
+    var initialWindowX = 0;
+    var initialWindowY = 0;
+    
+    // Listen for the mousedown event on the header
+    headerEl.addEventListener('mousedown', function(e) {
+      // Set the isMoving flag to true
+      isMoving = true;
+      
+      // Capture the current mouse position
+      initialMouseX = e.clientX;
+      initialMouseY = e.clientY;
+      
+      // Capture the current position of the window
+      initialWindowX = windowEl.offsetLeft;
+      initialWindowY = windowEl.offsetTop;
+    });
+    
+    // Listen for the mousemove event on the document
+    document.addEventListener('mousemove', function(e) {
+      // If the window is not being moved, do nothing
+      if (!isMoving) return;
+      
+      // Calculate the distance the mouse has moved
+      var deltaX = e.clientX - initialMouseX;
+      var deltaY = e.clientY - initialMouseY;
+      
+      // Update the position of the window based on the distance the mouse has moved
+      windowEl.style.top = initialWindowY + deltaY + 'px';
+      windowEl.style.left = initialWindowX + deltaX + 'px';
+    });
+    
+    // Listen for the mouseup event on the document
+    document.addEventListener('mouseup', function() {
+      // Set the isMoving flag to false
+      isMoving = false;
+    });
