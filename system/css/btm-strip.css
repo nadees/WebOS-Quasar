@@ -1,0 +1,38 @@
+/* Style the task bar container */
+.btm-strip-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Style the task bar buttons */
+  .btm-btn {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 80px;
+    transition: all 0.3s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #333;
+  }
+  
+  /* Add hover effect to task bar buttons */
+  .btm-btn:hover {
+    background-color: #555;
+  }
+  
+  /* Add active effect to selected task bar button */
+  .btm-btn.active {
+    background-color: #777;
+  }
