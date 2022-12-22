@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #333;
+    background-color: rgba(50, 50, 50, 0.75);
     position: absolute;
     bottom: 5px;
     left: 50%;
@@ -25,15 +25,16 @@
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: #333;
+    background-color: rgba(50, 50, 50, 0.75)
   }
   
   /* Add hover effect to task bar buttons */
   .btm-btn:hover {
-    background-color: #555;
+    background-color: rgb(255, 255, 255);
+    color: black;
   }
   
   /* Add active effect to selected task bar button */
   .btm-btn.active {
-    background-color: #777;
+    background-color: rgba(50, 50, 50, 0.75);
   }
