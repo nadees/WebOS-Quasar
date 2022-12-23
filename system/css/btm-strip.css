@@ -4,13 +4,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(50, 50, 50, 0.75);
+    background-color: rgba(255, 255, 255, 0.75);
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.75);
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     padding: 2px;
+    width: 90%;
   }
   
   /* Style the task bar buttons */
@@ -18,7 +19,7 @@
     border-radius: 10px;
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
     width: 80px;
@@ -26,16 +27,16 @@
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: rgba(50, 50, 50, 0.75)
+    background-color: rgba(255, 255, 255, 0.75)
   }
   
   /* Add hover effect to task bar buttons */
   .btm-btn:hover {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
   
   /* Add active effect to selected task bar button */
   .btm-btn.active {
-    background-color: rgba(50, 50, 50, 0.75);
+    background-color: rgba(255, 0, 0, 0.75);
   }

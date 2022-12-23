@@ -1,6 +1,26 @@
 /*The main users interface styles*/
 /*Main menu bar of the UI*/
 
+html {
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_arrow.cur'),default;
+    
+    /*
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_busy.ani'),default;
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_ew.cur'),default;
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_helpsel.cur'),default;
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_link.cur'),default;
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_move.cur'),default;
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_nesw.cur'),default;
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_ns.cur'),default;
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_nwse.cur'),default;
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_pen.cur'),default;
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_unavail.cur'),default;
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_up.cur'),default;
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_working.ani'),default;
+    cursor: url('/system/cursors/WebOS_Cur_Light/beam_i.cur'),default;
+    */
+}
+
 .body {
     text-align: center;
     background-image: url(/system/media/pictures/img0.jpg);
