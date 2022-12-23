@@ -22,11 +22,12 @@
   .context-menu li {
     border-radius: 10px;
     cursor: pointer;
+    transition-duration: 500ms;
   }
 
   .context-menu li:hover {
     background-color: rgb(200, 200, 200);
-    transition-duration: 62.5ms;
+    transition-duration: 0ms;
   }
 
   .context-menu button {

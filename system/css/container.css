@@ -9,6 +9,8 @@
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.75);
   overflow: hidden;
   resize: both;
+  width: 450px;
+  height: 250px;
 }
 
 .window-header {
@@ -17,9 +19,60 @@
   cursor: default;
 }
 
+.window-controll {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px;
+}
+
+#min_btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  transition-duration: 250ms;
+}
+
+#min_btn:hover {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 10px rgba(0, 255, 0, 0.75);
+  transition-duration: 250ms;
+}
+
+#max_btn {
+  background-color: rgb(0, 0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  transition-duration: 250ms;
+}
+
+#max_btn:hover {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 10px rgba(255, 255, 0, 0.75);
+  transition-duration: 250ms;
+}
+
+#close_btn {
+  background-color: rgb(0, 0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  transition-duration: 250ms;
+}
+
+#close_btn:hover {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 10px rgba(255, 0, 0, 0.75);
+  transition-duration: 250ms;
+}
+
 .window-title {
-  font-size: 14px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   line-height: 30px;
   padding-left: 10px;
   text-align: left;
