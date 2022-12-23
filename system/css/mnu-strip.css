@@ -46,8 +46,8 @@
 }
 
 .mnu-divider {
-    border: solid 1px rgb(50, 50, 50);
+    border: solid 1px rgba(50, 50, 50, 0.75);
     border-radius: 5px;
     display: inline;
-    padding: 5px;
+    padding: 8px;
 }

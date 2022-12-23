@@ -3,6 +3,10 @@
 
 html {
     cursor: url('/system/cursors/WebOS_Cur_Light/aero_arrow.cur'),default;
+}
+
+body {
+    cursor: url('/system/cursors/WebOS_Cur_Light/aero_arrow.cur'),default;
     
     /*
     cursor: url('/system/cursors/WebOS_Cur_Light/aero_busy.ani'),default;
