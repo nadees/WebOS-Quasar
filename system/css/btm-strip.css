@@ -10,10 +10,16 @@
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    transition-duration: 200ms;
     padding: 2px;
     width: 90%;
   }
   
+.btm-strip-container:hover {
+  box-shadow: 0 12px 16px 0 rgb(0, 0, 0), 0 17px 50px 0 rgb(255, 255, 255);
+  transition-duration: 200ms;
+}
+
   /* Style the task bar buttons */
   .btm-btn {
     border-radius: 10px;
