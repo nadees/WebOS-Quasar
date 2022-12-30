@@ -58,12 +58,12 @@
     </div>
 
     <!--WebOS Window container-->
-    <div class="window">
-        <div class="window-header">
-          <div class="window-controll">
-            <button onclick="" id="min_btn">🟩</button>
-            <button onclick="" id="max_btn">🟨</button>
-            <button onclick="" id="close_btn">🟥</button>
+    <div class="window" id="window">
+        <div class="window-header" id="window_header">
+          <div class="window-controll" id="window_controll">
+            <button onclick="window_min()" id="min_btn" title="Minimize">🟩</button>
+            <button onclick="window_max()" id="max_btn" title="Maximum">🟨</button>
+            <button onclick="window_close()" id="close_btn" title="Close">🟥</button>
           </div>
           <div class="window-title" id="window_title">Window Container</div>
         </div>
@@ -76,19 +76,19 @@
     <!--WebOS main context-menu-->
     <div class="context-menu">
       <ul>
-        <li><button>📂View</button></li>
-        <li><button>🔃Sort by</button></li>
+        <li><button onclick="">📂View</button></li>
+        <li><button onclick="">🔃Sort by</button></li>
         <li><button onclick="location.reload();">🔄️Refresh</button></li>
         <hr>
-        <li><button>🔪Cut</button></li>
-        <li><button>🌊Copy</button></li>
-        <li><button>🫗Paste</button></li>
-        <li><button>📄New</button></li>
+        <li><button onclick="">🔪Cut</button></li>
+        <li><button onclick="">🌊Copy</button></li>
+        <li><button onclick="">🫗Paste</button></li>
+        <li><button onclick="">📄New</button></li>
         <hr>
-        <li><button>🧊Open in Terminal</button></li>
-        <li><button>🏞️Personalize</button></li>
+        <li><button onclick="">🧊Open in Terminal</button></li>
+        <li><button onclick="">🏞️Personalize</button></li>
         <hr>
-        <li><button>🪣Open Container</button></li>
+        <li><button onclick="window_open()">🪣Open Container</button></li>
       </ul>
     </div>
     <script src="/system/js/context-menu.js"></script>

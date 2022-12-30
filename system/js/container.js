@@ -1,4 +1,4 @@
-    // Get the window element
+  // Get the window element
     var windowEl = document.querySelector('.window');
     
     // Get the header element
@@ -48,3 +48,27 @@
       // Set the isMoving flag to false
       isMoving = false;
     });
+
+    function window_min() {
+      var element = document.getElementById("window");
+        element.style.display = "none";
+    }
+
+    function window_restore() {
+      
+    }
+
+    function window_max() {
+      var element = document.getElementById("window");
+        element.style.display = "none";
+    }
+
+    function window_close() {
+      var element = document.getElementById("window");
+        element.style.display = "none";
+    }
+    
+    function window_open() {
+      var element = document.getElementById("window");
+        element.style.display = "block";      
+    }
