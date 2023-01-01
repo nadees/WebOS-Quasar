@@ -49,18 +49,19 @@
       isMoving = false;
     });
 
+    // App container controllers
     function window_min() {
       var element = document.getElementById("window");
         element.style.display = "none";
     }
 
     function window_restore() {
-      
+      element.style.display = "";
     }
 
     function window_max() {
       var element = document.getElementById("window");
-        element.style.display = "none";
+        element.style.display = "";
     }
 
     function window_close() {
@@ -70,5 +71,5 @@
     
     function window_open() {
       var element = document.getElementById("window");
-        element.style.display = "block";      
+        element.style.display = "block";
     }

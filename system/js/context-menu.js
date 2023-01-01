@@ -11,3 +11,6 @@ document.addEventListener('contextmenu', function(event) {
     contextMenu.classList.remove('active');
   });
   
+  function refresh() {
+    location.reload();
+  }
