@@ -28,7 +28,7 @@
     <!--WebOS main menu strip-->
     <div class="mnu-strip-container">
     <div class="mnu-strip" id="mnu_strip">
-        <button class="mnu-btn" id="mnu_System">🪟PC</button>
+        <button class="mnu-btn" id="mnu_System">💻PC</button>
         <button class="mnu-btn" id="mnu_Finder">🔍Finder</button>
         <button class="mnu-btn" id="mnu_File">📂File</button>
         <button class="mnu-btn" id="mnu_Edit">✂️Edit</button>
@@ -68,9 +68,9 @@
           </div>
           <div class="window-title" id="window_title">Window Container</div>
         </div>
-        <div class="window-content" id="window_content">
+        <iframe src="/system/apps/calc/calc.html" class="window-content" id="window_content">
           <!-- Add content here -->
-        </div>
+        </iframe>
       </div>
       <script src="/system/js/container.js"></script>
 
@@ -89,7 +89,7 @@
         <li><button onclick="">🧊Open in Terminal</button></li>
         <li><button onclick="">🏞️Personalize</button></li>
         <hr>
-        <li><button onclick="window_open()">🪣Open Container</button></li>
+        <li><button onclick="window_open()">🍱Open Container</button></li>
       </ul>
     </div>
     <script src="/system/js/context-menu.js"></script>

@@ -61,7 +61,8 @@
 
     function window_max() {
       var element = document.getElementById("window");
-        element.style.display = "";
+      element.style.height = "100%";
+      element.style.width = "100%";
     }
 
     function window_close() {
