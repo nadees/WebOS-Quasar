@@ -3,15 +3,15 @@
 
     ## Main features of WebOS
 
-    - Main menu strip at the top middle of the screen.
+    - Main menu bar at the top middle of the screen.
 
-    - Main bottom strip at the bottom middle of the screen.
+    - Main application launcher at the bottom middle of the screen.
 
     - Mouse interactive animations
 
     - Our new release wallpaper. 
 
-    - New HTML apps.
+    - New HTML applications.
     
     - And more many things.
     
@@ -22,3 +22,5 @@
 > *** All rights of Cursors should go to those mentioned above. ***
 
 >## *Thanks to everyone who helps develop this project.*
+
+>### © 2023 AstroGroupSL.
