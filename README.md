@@ -1,7 +1,7 @@
-># WebOS (*AstroGroupSL*)
+># WebOS Quasar (*AstroGroupSL*)
 * Web-based UI for cross platform kernel operating systems.
 
-    ## Main features of WebOS
+    ## Main features of WebOS Quasar
 
     - Main menu bar at the top middle of the screen.
 
