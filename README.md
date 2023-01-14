@@ -23,4 +23,7 @@
 
 >## *Thanks to everyone who helps develop this project.*
 
+>### *WebOS Quasar Link (This may not work correctly on this server.) : https://nadees.github.io/WebOS/*
+>### If so, try downloading this repository and run it on your localhost.
+
 >### © 2023 AstroGroupSL.
