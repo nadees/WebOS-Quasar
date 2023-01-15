@@ -61,3 +61,10 @@ function app_notebook() {
     document.getElementById("window_content").src = "/system/apps/notebook/notebook.html";
     document.getElementById("window_title").innerHTML = "Notebook";
 }
+
+function app_settings() {
+    var element = document.getElementById("window");
+    element.style.display = "block";
+    document.getElementById("window_content").src = "/system/apps/settings/settings.html";
+    document.getElementById("window_title").innerHTML = "Settings";
+}
