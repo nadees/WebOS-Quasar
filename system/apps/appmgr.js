@@ -36,6 +36,7 @@ function app_clock() {
 function app_browser() {
     var element = document.getElementById("window");
     element.style.display = "block";
+    element.style.overflow = "hidden";
     document.getElementById("window_content").src = "/system/apps/browser/browser.html";
     document.getElementById("window_title").innerHTML = "Browser";
 }
