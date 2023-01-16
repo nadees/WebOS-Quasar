@@ -1,12 +1,8 @@
 function app_files() {
     var element = document.getElementById("window");
-    if (element.style.display === "none") {
         element.style.display = "block";
         document.getElementById("window_content").src = "/system/apps/files/files.html";
         document.getElementById("window_title").innerHTML = "📁 Files";    
-    } else {
-        element.style.display = "none";
-    }
 }
 
 function app_calc() {
