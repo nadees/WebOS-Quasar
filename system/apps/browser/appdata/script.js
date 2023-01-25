@@ -1,0 +1,3 @@
+function functionGo()() {
+    var txtURL = 
+}

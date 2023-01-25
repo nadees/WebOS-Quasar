@@ -1,70 +1,30 @@
+var wincon = [];
+let PID = Math.floor
+function openWindow(title, src) {
+  var window = document.createElement("div");
+  window.setAttribute("id","window")
+  window.innerHTML = `
+        <div id="window_header">
+          <div id="window_control">
+            <button onclick="window_min()" id="min_btn" title="Minimize"></button>
+            <button onclick="window_max()" id="max_btn" title="Maximum"></button>
+            <button onclick="window_close()" id="close_btn" title="Close"></button>
+          </div>
+          <div id="window_title">${title}</div>
+        </div>
+        <iframe src="${src}" id="window_content"></iframe>
+        `;
+  document.body.appendChild(window);
+  wincon.push(window);
+  container();
+}
+  
 function app_files() {
-    var element = document.getElementById("window");
-        element.style.display = "block";
-        document.getElementById("window_content").src = "/system/apps/files/files.html";
-        document.getElementById("window_title").innerHTML = "📁 Files";    
+  openWindow("📁 Files", "/system/apps/files/files.html");
 }
 
 function app_calc() {
-    var element = document.getElementById("window");
-    element.style.display = "block";
-    document.getElementById("window_content").src = "/system/apps/calc/calc.html";
-    document.getElementById("window_title").innerHTML = "🧮 Calculator";
+  openWindow("🧮 Calculator", "/system/apps/calc/calc.html");
 }
 
-function app_calender() {
-    var element = document.getElementById("window");
-    element.style.display = "block";
-    document.getElementById("window_content").src = "/system/apps/calender/calender.html";
-    document.getElementById("window_title").innerHTML = "🗓️ Calender";
-}
-
-function app_cam() {
-    var element = document.getElementById("window");
-    element.style.display = "block";
-    document.getElementById("window_content").src = "/system/apps/cam/cam.html";
-    document.getElementById("window_title").innerHTML = "📸 Camera";
-}
-
-function app_clock() {
-    var element = document.getElementById("window");
-    element.style.display = "block";
-    document.getElementById("window_content").src = "/system/apps/clock/clock.html";
-    document.getElementById("window_title").innerHTML = "⏰ Clock";
-}
-
-function app_browser() {
-    var element = document.getElementById("window");
-    element.style.display = "block";
-    element.style.overflow = "hidden";
-    document.getElementById("window_content").src = "/system/apps/browser/browser.html";
-    document.getElementById("window_title").innerHTML = "🌐 Browser";
-}
-
-function app_photos() {
-    var element = document.getElementById("window");
-    element.style.display = "block";
-    document.getElementById("window_content").src = "/system/apps/photos/photos.html";
-    document.getElementById("window_title").innerHTML = "🏳️‍🌈 Photos";
-}
-
-function app_terminal() {
-    var element = document.getElementById("window");
-    element.style.display = "block";
-    document.getElementById("window_content").src = "/system/apps/terminal/terminal.html";
-    document.getElementById("window_title").innerHTML = "🧊 Terminal";
-}
-
-function app_notebook() {
-    var element = document.getElementById("window");
-    element.style.display = "block";
-    document.getElementById("window_content").src = "/system/apps/notebook/notebook.html";
-    document.getElementById("window_title").innerHTML = "📝 Notebook";
-}
-
-function app_settings() {
-    var element = document.getElementById("window");
-    element.style.display = "block";
-    document.getElementById("window_content").src = "/system/apps/settings/settings.html";
-    document.getElementById("window_title").innerHTML = "🔮 Settings";
-}
+// Add more functions for other apps

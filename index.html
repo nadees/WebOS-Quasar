@@ -10,16 +10,19 @@
     <title>WebOS Quasar</title>
 
     <!--WebOS Quasar main ui stye sheets-->
-    <link rel="stylesheet" href="/system/css/default.css">
-    <link rel="stylesheet" href="/system/css/mnu-strip.css">
     <link rel="stylesheet" href="/system/css/btm-strip.css">
     <link rel="stylesheet" href="/system/css/container.css">
     <link rel="stylesheet" href="/system/css/context-menu.css">
     <link rel="stylesheet" href="/system/css/cursor.css">
+    <link rel="stylesheet" href="/system/css/default.css">
+    <link rel="stylesheet" href="/system/css/deskenv.css">
+    <link rel="stylesheet" href="/system/css/mnu-strip.css">
 
     <!--WebOS Quasar main java script-->
-    <script src="/system/js/default.js"></script>
     <script src="/system/apps/appbroker.js"></script>
+    <script src="/system/js/container.js"></script>
+    <script src="/system/js/context-menu.js"></script>
+    <script src="/system/js/default.js"></script>
 
 </head>
 
@@ -60,22 +63,6 @@
       </div>
     </div>
 
-    <!--WebOS Quasar Window container-->
-    <div style="display: none;" class="window" id="window">
-        <div class="window-header" id="window_header">
-          <div class="window-controll" id="window_controll">
-            <button onclick="window_min()" id="min_btn" title="Minimize">🟩</button>
-            <button onclick="window_max()" id="max_btn" title="Maximum">🟨</button>
-            <button onclick="window_close()" id="close_btn" title="Close">🟥</button>
-          </div>
-          <div class="window-title" id="window_title">Window Container</div>
-        </div>
-        <iframe src="" class="window-content" id="window_content">
-          <!-- Add content here -->
-        </iframe>
-      </div>
-      <script src="/system/js/container.js"></script>
-
     <!--WebOS Quasar main context-menu-->
     <div class="context-menu">
       <ul>
@@ -90,16 +77,12 @@
         <hr>
         <li><button onclick="">🧊Open in Terminal</button></li>
         <li><button onclick="">🏞️Personalize</button></li>
-        <hr>
-        <li><button onclick="window_open()">🍱Open Container</button></li>
       </ul>
     </div>
-    <script src="/system/js/context-menu.js"></script>
 
     <!--WebOS Quasar Desktop Environment-->
     <iframe class="desk-env" id="desk_env" src="">
       <!--Content goes here.-->
     </iframe>
-    <link rel="stylesheet" href="/system/css/deskenv.css">
 </body>
 </html>
